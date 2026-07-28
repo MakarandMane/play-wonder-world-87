@@ -95,7 +95,8 @@ a:hover { text-decoration: underline; }
 }
 .brand img { height: 32px; width: auto; }
 
-.nav { display: flex; align-items: center; gap: 22px; flex-wrap: nowrap; min-width: 0; }
+.nav { display: flex; align-items: center; gap: 18px; flex-wrap: nowrap; min-width: 0; }
+.nav > * { flex: 0 0 auto; }
 .nav a {
   font-weight: 700; font-size: 14.5px; color: var(--ink); white-space: nowrap;
   position: relative; padding: 4px 0; text-decoration: none;
@@ -360,7 +361,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1240px) {
-  .nav { gap: 16px; }
+  .nav { gap: 13px; }
   .nav a { font-size: 13.5px; }
   .btn-nav { padding: 9px 18px; }
   .wrap { width: min(1180px, 100% - 36px); }
