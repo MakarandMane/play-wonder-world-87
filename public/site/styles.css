@@ -95,7 +95,7 @@ a:hover { text-decoration: underline; }
 }
 .brand img { height: 32px; width: auto; }
 
-.nav { display: flex; align-items: center; gap: 20px; flex-wrap: nowrap; }
+.nav { display: flex; align-items: center; gap: 22px; flex-wrap: nowrap; min-width: 0; }
 .nav a {
   font-weight: 700; font-size: 14.5px; color: var(--ink); white-space: nowrap;
   position: relative; padding: 4px 0; text-decoration: none;
@@ -133,7 +133,7 @@ a:hover { text-decoration: underline; }
 .btn:hover { text-decoration: none; transform: translateY(-2px); }
 .btn-primary { background: var(--blue); color: #fff; box-shadow: 0 12px 24px -16px rgba(50, 64, 154, 0.9); }
 .btn-primary:hover { background: var(--blue-dark); }
-.btn-nav { padding: 10px 20px; font-size: 14px; }
+.btn-nav { padding: 10px 22px; font-size: 14px; border-radius: 10px; }
 .btn-ghost { background: var(--white); color: var(--blue); border: 2px solid var(--blue-tint); }
 .btn-ghost:hover { border-color: var(--blue-light); }
 .btn-amazon { background: var(--yellow); color: #3a2c00; box-shadow: 0 12px 24px -16px rgba(255, 194, 14, 0.9); }
@@ -177,7 +177,7 @@ a:hover { text-decoration: underline; }
 }
 .hero-curve {
   position: absolute; left: 0; right: 0; bottom: -1px; height: clamp(48px, 6vw, 88px);
-  background: var(--white);
+  background: var(--bg-soft);
   -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'><path d='M0 100 C 360 0 1080 0 1440 100 Z' fill='black'/></svg>") bottom/100% 100% no-repeat;
   mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'><path d='M0 100 C 360 0 1080 0 1440 100 Z' fill='black'/></svg>") bottom/100% 100% no-repeat;
 }
@@ -360,10 +360,16 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1240px) {
-  .nav { gap: 14px; }
+  .nav { gap: 16px; }
   .nav a { font-size: 13.5px; }
-  .btn-nav { padding: 9px 16px; }
+  .btn-nav { padding: 9px 18px; }
   .wrap { width: min(1180px, 100% - 36px); }
+}
+
+@media (max-width: 1080px) {
+  .nav { gap: 12px; }
+  .nav a { font-size: 13px; }
+  .btn-nav { padding: 9px 15px; font-size: 13px; }
 }
 
 @media (max-width: 900px) {
@@ -385,6 +391,11 @@ a:hover { text-decoration: underline; }
   .nav a { padding: 13px 0; border-bottom: 1px solid var(--border); }
   .nav a:not(.btn)::after { display: none; }
   .nav .btn-nav { margin-top: 14px; border-bottom: 0; }
+  /* inside the white dropdown the CTA must stay brand blue, not the hero yellow */
+  .site-header .btn-nav,
+  .site-header:not(.is-stuck) .btn-nav { background: var(--blue); color: #fff; }
+  .site-header .btn-nav:hover,
+  .site-header:not(.is-stuck) .btn-nav:hover { background: var(--blue-dark); }
 }
 
 @media (prefers-reduced-motion: reduce) {
