@@ -56,8 +56,6 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <span class="blob blob-a" aria-hidden="true"></span>
-        <span class="blob blob-b" aria-hidden="true"></span>
         <span class="piece piece-1" aria-hidden="true"></span>
         <span class="piece piece-2" aria-hidden="true"></span>
         <span class="piece piece-3" aria-hidden="true"></span>
@@ -72,135 +70,122 @@
             <a class="btn btn-primary js-amazon" href="#shop">Shop Our Collection</a>
             <a class="btn btn-ghost" href="#products">Explore Products</a>
           </div>
-          <div class="hero-strip" aria-hidden="true">
-            <span class="dot d1"></span><span class="dot d2"></span>
-            <span class="dot d3"></span><span class="dot d4"></span>
+        </div>
+      </section>
+
+      <!-- PRODUCTS (overlapping card row) -->
+      <section class="section products-section" id="products">
+        <div class="wrap">
+          <div class="reveal section-head">
+            <p class="kicker">Our Products</p>
+            <h2 class="section-title center">Made for little hands and big ideas</h2>
+          </div>
+
+          <div class="product-grid">
+            <article class="card product-card reveal">
+              <div class="card-media tint-yellow">
+                <img
+                  src="assets/puzzles.jpg"
+                  alt="A set of two jigsaw puzzles featuring various iconic landmarks and cultural symbols of Paris, including the Eiffel Tower, the Louvre Pyramid, and the Mona Lisa."
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Jigsaw Puzzles</h3>
+                <p>
+                  Age-appropriate puzzles that develop concentration, logical thinking,
+                  spatial reasoning, and fine motor skills.
+                </p>
+              </div>
+            </article>
+
+            <article class="card product-card reveal">
+              <div class="card-media tint-orchid">
+                <img
+                  src="assets/flashcards.jpg"
+                  alt="Educational toy set with a card reader, a stack of flashcards, and individual cards showing juice, taxi, sea, and kangaroo."
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Talking Flash Cards</h3>
+                <p>
+                  Interactive rechargeable learning cards that make vocabulary building fun
+                  through sound, images, and independent play.
+                </p>
+              </div>
+            </article>
+
+            <article class="card product-card reveal">
+              <div class="card-media tint-emerald">
+                <img
+                  src="assets/wooden-toys.jpg"
+                  alt="A hand placing a wooden puzzle piece into a wooden board game."
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Wooden Toys</h3>
+                <p>
+                  Beautifully crafted educational toys designed to encourage open-ended play,
+                  creativity, and hands-on learning.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- WHO WE ARE -->
-      <section class="section" id="who-we-are">
-        <div class="wrap narrow reveal">
-          <h2 class="section-title">Who We Are</h2>
-          <span class="rule" aria-hidden="true"></span>
-          <p class="big">
-            At <strong>The Puzzl Co</strong>, we believe that the best learning happens
-            through play.
-          </p>
-          <p>
-            Founded in <strong>2024</strong>, we are a marketplace-first brand specializing
-            in thoughtfully designed puzzles and educational toys for young children. Our
-            team of puzzle experts and toy designers creates products that combine fun,
-            learning, and child-safe design to help children build essential skills while
-            enjoying every moment of play.
-          </p>
-          <p>
-            From first words and problem-solving to creativity and imagination, every
-            product is crafted to make learning engaging and meaningful.
-          </p>
-        </div>
-      </section>
-
-      <!-- PRODUCTS -->
-      <section class="section section-alt" id="products">
-        <div class="wrap">
-          <div class="reveal">
-            <h2 class="section-title center">Our Products</h2>
-            <span class="rule center-rule" aria-hidden="true"></span>
+      <section class="section section-soft" id="who-we-are">
+        <div class="wrap about-grid">
+          <div class="about-media reveal">
+            <img src="assets/wooden-toys.jpg" alt="A hand placing a wooden puzzle piece into a wooden board game." loading="lazy" />
+            <span class="about-badge">Since 2024</span>
           </div>
-
-          <article class="product reveal">
-            <div class="product-media tint-yellow">
-              <img
-                src="assets/puzzles.jpg"
-                alt="A set of two jigsaw puzzles featuring various iconic landmarks and cultural symbols of Paris, including the Eiffel Tower, the Louvre Pyramid, and the Mona Lisa."
-                loading="lazy"
-              />
-            </div>
-            <div class="product-body">
-              <span class="chip chip-yellow" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                  <path d="M10 3a2 2 0 0 1 2 2 1 1 0 0 0 1.6.8A1.6 1.6 0 0 1 16 7v2h1a2 2 0 0 1 0 4h-1v3a2 2 0 0 1-2 2h-2.2a1.6 1.6 0 0 1-1.2-2.6A1 1 0 0 0 9.6 14 2 2 0 0 1 6 15.2V18H5a2 2 0 0 1-2-2v-3h1a2 2 0 0 0 0-4H3V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2-1z"/>
-                </svg>
-              </span>
-              <h3>Jigsaw Puzzles</h3>
-              <p>
-                Age-appropriate puzzles that develop concentration, logical thinking,
-                spatial reasoning, and fine motor skills.
-              </p>
-            </div>
-          </article>
-
-          <article class="product product-flip reveal">
-            <div class="product-media tint-orchid">
-              <img
-                src="assets/flashcards.jpg"
-                alt="Educational toy set with a card reader, a stack of flashcards, and individual cards showing juice, taxi, sea, and kangaroo."
-                loading="lazy"
-              />
-            </div>
-            <div class="product-body">
-              <span class="chip chip-orchid" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                  <path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zm-7 8h2a5 5 0 0 0 10 0h2a7 7 0 0 1-6 6.92V21h-2v-3.08A7 7 0 0 1 5 11z"/>
-                </svg>
-              </span>
-              <h3>Talking Flash Cards</h3>
-              <p>
-                Interactive rechargeable learning cards that make vocabulary building fun
-                through sound, images, and independent play.
-              </p>
-            </div>
-          </article>
-
-          <article class="product reveal">
-            <div class="product-media tint-emerald">
-              <img
-                src="assets/wooden-toys.jpg"
-                alt="A hand placing a wooden puzzle piece into a wooden board game."
-                loading="lazy"
-              />
-            </div>
-            <div class="product-body">
-              <span class="chip chip-emerald" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                  <path d="M12 2 5 12h4l-5 8h16l-5-8h4z"/>
-                </svg>
-              </span>
-              <h3>Wooden Toys</h3>
-              <p>
-                Beautifully crafted educational toys designed to encourage open-ended play,
-                creativity, and hands-on learning.
-              </p>
-            </div>
-          </article>
+          <div class="about-copy reveal">
+            <p class="kicker">Who We Are</p>
+            <h2 class="section-title">
+              At The Puzzl Co, we believe that the best learning happens through play.
+            </h2>
+            <p>
+              Founded in <strong>2024</strong>, we are a marketplace-first brand specializing
+              in thoughtfully designed puzzles and educational toys for young children. Our
+              team of puzzle experts and toy designers creates products that combine fun,
+              learning, and child-safe design to help children build essential skills while
+              enjoying every moment of play.
+            </p>
+            <p>
+              From first words and problem-solving to creativity and imagination, every
+              product is crafted to make learning engaging and meaningful.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- WHY US -->
       <section class="section" id="why-us">
         <div class="wrap">
-          <div class="reveal">
+          <div class="reveal section-head">
+            <p class="kicker">Parent Info</p>
             <h2 class="section-title center">Why Parents Choose The Puzzl Co</h2>
-            <span class="rule center-rule" aria-hidden="true"></span>
           </div>
           <ul class="why-grid">
-            <li class="why-card c-blue reveal">Designed by puzzle and learning experts</li>
-            <li class="why-card c-orchid reveal">Child-safe, thoughtfully made products</li>
-            <li class="why-card c-yellow reveal">BIS-approved products wherever applicable</li>
-            <li class="why-card c-emerald reveal">Educational toys that children genuinely enjoy</li>
-            <li class="why-card c-orange reveal">Trusted by thousands of families across India</li>
+            <li class="why-card c-blue reveal"><span class="why-dot" aria-hidden="true"></span>Designed by puzzle and learning experts</li>
+            <li class="why-card c-orchid reveal"><span class="why-dot" aria-hidden="true"></span>Child-safe, thoughtfully made products</li>
+            <li class="why-card c-yellow reveal"><span class="why-dot" aria-hidden="true"></span>BIS-approved products wherever applicable</li>
+            <li class="why-card c-emerald reveal"><span class="why-dot" aria-hidden="true"></span>Educational toys that children genuinely enjoy</li>
+            <li class="why-card c-orange reveal"><span class="why-dot" aria-hidden="true"></span>Trusted by thousands of families across India</li>
           </ul>
         </div>
       </section>
 
       <!-- TESTIMONIALS -->
-      <section class="section section-alt" id="customer-speak">
+      <section class="section section-soft" id="customer-speak">
         <div class="wrap">
-          <div class="reveal">
+          <div class="reveal section-head">
+            <p class="kicker">Reviews</p>
             <h2 class="section-title center">Customer Speak</h2>
-            <span class="rule center-rule" aria-hidden="true"></span>
           </div>
           <div class="quotes">
             <figure class="quote reveal">
@@ -245,9 +230,9 @@
       <!-- CONTACT -->
       <section class="section" id="contact">
         <div class="wrap">
-          <div class="reveal">
+          <div class="reveal section-head">
+            <p class="kicker">Say Hello</p>
             <h2 class="section-title center">Contact Us</h2>
-            <span class="rule center-rule" aria-hidden="true"></span>
           </div>
           <div class="contact-card reveal">
             <div class="contact-block">
