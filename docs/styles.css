@@ -223,8 +223,9 @@ a:hover { text-decoration: underline; }
 .section p strong { color: var(--blue); }
 
 /* ---------- Products (overlapping card row) ---------- */
-.products-section { padding-top: 0; margin-top: clamp(-90px, -6vw, -60px); position: relative; z-index: 2; }
-.products-section .section-head { padding-top: clamp(60px, 7vw, 90px); }
+.products-section { position: relative; z-index: 2; }
+#who-we-are { padding-top: 0; margin-top: clamp(-90px, -6vw, -60px); position: relative; z-index: 2; }
+#who-we-are .about-grid { padding-top: clamp(60px, 7vw, 90px); }
 
 .product-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -254,12 +255,12 @@ a:hover { text-decoration: underline; }
 
 /* ---------- About ---------- */
 .about-grid {
-  display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(28px, 5vw, 64px);
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 64px);
   align-items: center;
 }
 .about-media { position: relative; }
 .about-media img {
-  border-radius: var(--radius-lg); width: 100%; aspect-ratio: 4 / 3.4;
+  border-radius: var(--radius-lg); width: 100%; aspect-ratio: 4 / 3.2; max-height: 460px;
   object-fit: cover; box-shadow: var(--shadow);
 }
 .about-badge {
@@ -371,7 +372,7 @@ a:hover { text-decoration: underline; }
   .site-header:not(.is-stuck) .nav { background: var(--white); }
   .site-header:not(.is-stuck) .nav a:not(.btn) { color: var(--ink); }
   .about-grid { grid-template-columns: 1fr; }
-  .products-section { margin-top: -48px; }
+  #who-we-are { margin-top: -48px; }
 
   .nav-toggle { display: flex; }
   .nav {
