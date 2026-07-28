@@ -281,18 +281,30 @@ a:hover { text-decoration: underline; }
   display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px;
 }
 .why-card {
-  border-radius: var(--radius); padding: 26px 24px;
+  position: relative;
+  background: var(--white);
+  border-radius: var(--radius); padding: 26px 24px 24px;
   font-family: var(--font-body); font-weight: 700; font-size: 1rem; line-height: 1.55;
-  border: 1px solid transparent;
-  transition: transform 0.22s ease;
+  color: #1d2333;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--blue);
+  box-shadow: 0 14px 30px -22px rgba(20, 28, 70, 0.55);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
-.why-card:hover { transform: translateY(-5px); }
-.why-dot { display: block; width: 34px; height: 6px; border-radius: 999px; margin-bottom: 16px; }
-.c-blue { background: var(--blue-tint); } .c-blue .why-dot { background: var(--blue); }
-.c-orchid { background: var(--orchid-tint); } .c-orchid .why-dot { background: var(--orchid); }
-.c-yellow { background: var(--yellow-tint); } .c-yellow .why-dot { background: var(--yellow); }
-.c-emerald { background: var(--emerald-tint); } .c-emerald .why-dot { background: var(--emerald); }
-.c-orange { background: var(--orange-tint); } .c-orange .why-dot { background: var(--orange); }
+.why-card:hover { transform: translateY(-5px); box-shadow: 0 20px 38px -22px rgba(20, 28, 70, 0.6); }
+.why-ico {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px; border-radius: 12px; margin-bottom: 16px;
+  color: #fff; background: var(--blue);
+}
+.why-ico svg { width: 24px; height: 24px; }
+.why-text { display: block; }
+.c-blue { border-top-color: var(--blue); } .c-blue .why-ico { background: var(--blue); }
+.c-orchid { border-top-color: var(--orchid); } .c-orchid .why-ico { background: #c76aa6; }
+.c-yellow { border-top-color: var(--yellow); } .c-yellow .why-ico { background: #b8860a; }
+.c-emerald { border-top-color: var(--emerald); } .c-emerald .why-ico { background: #3f9c4c; }
+.c-orange { border-top-color: var(--orange); } .c-orange .why-ico { background: var(--orange); }
+
 
 /* ---------- Testimonials ---------- */
 .quotes {
