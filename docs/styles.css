@@ -164,7 +164,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Hero ---------- */
 .hero {
-  position: relative; overflow: hidden; isolation: isolate;
+  position: relative; overflow: hidden; isolation: isolate; z-index: 3;
   min-height: 640px;
   display: flex; align-items: center;
   padding: clamp(96px, 9vw, 120px) 0 clamp(110px, 10vw, 140px);
@@ -180,7 +180,7 @@ a:hover { text-decoration: underline; }
     linear-gradient(180deg, rgba(50, 64, 154, 0.86) 0%, rgba(50, 64, 154, 0.66) 55%, rgba(50, 64, 154, 0.74) 100%);
 }
 .hero-curve {
-  position: absolute; left: 0; right: 0; bottom: -1px; height: clamp(48px, 6vw, 88px);
+  position: absolute; left: 0; right: 0; bottom: -1px; z-index: 2; height: clamp(48px, 6vw, 88px);
   background: var(--bg-soft);
   -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'><path d='M0 100 C 360 0 1080 0 1440 100 Z' fill='black'/></svg>") bottom/100% 100% no-repeat;
   mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'><path d='M0 100 C 360 0 1080 0 1440 100 Z' fill='black'/></svg>") bottom/100% 100% no-repeat;
