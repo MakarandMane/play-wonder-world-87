@@ -1,41 +1,27 @@
-## The Puzzl Co — one-page landing site
+## Goal
 
-A single scrolling page at `/` with sticky nav. All copy used verbatim from the Word document — no edits, no invented content.
+Make the hero section corporate and closer to the reference kindergarten template: a full-bleed photographic band with a colored brand overlay, centered headline and CTA — instead of the current pastel gradient panel.
 
-### Brand system
+## What changes
 
-From the supplied color spec, added as tokens in `src/styles.css`:
+**1. Hero background image**
+- Generate a wide (1920x1080) photographic-style background: bright, clean children's play/learning scene with puzzles, wooden toys and flash cards on a light table, soft natural light, plenty of open space in the centre for text.
+- Save it as `assets/hero.jpg` in both `public/site/assets/` and `docs/assets/`.
 
-- Primary: Blue (Pigment) `#32409A`
-- Secondary accents: Light Medium Orchid `#DC94C0`, Mikado Yellow `#FFC20E`, Emerald `#5DBC68`, Halloween Orange `#F26529`
-- Soft off-white background, generous rounded corners, chunky friendly type (playful but not childish — roughly a 7/10 on the play scale)
-- Subtle puzzle-piece motifs echoing the logo mark as section accents
+**2. Hero layout (like the reference)**
+- Full-bleed background image, `background-size: cover`, centred, min-height around 78vh on desktop.
+- Brand-blue gradient overlay on top (`#32409A` at ~72% fading to ~55%), keeping it light and airy rather than the reference's heavy pink — text stays clearly legible.
+- Content centred: small uppercase eyebrow "Play. Learn. Grow.", the H1 "The Puzzl Co", the lede paragraph, then the two pill buttons. Copy stays exactly as it is now.
+- Buttons: primary becomes a white/yellow pill for contrast on the photo; secondary becomes an outlined white pill.
+- Header: transparent over the hero at the top of the page, turning solid white on scroll (small addition to the existing scroll handler in `script.js`); logo switches to a white version while transparent.
+- Soft-white curved divider at the bottom of the hero so the product cards still lift over it.
+- Floating puzzle-piece decorations kept, but at low white opacity so they read as texture rather than clip art.
 
-### Sections (in document order)
+**3. Responsive**
+- On mobile the hero reduces to ~64vh, type scales down, buttons stack full-width.
 
-1. **Header** — logo (uploaded PNG, via CDN asset), nav links to each section, "Shop on Amazon" button
-2. **Hero** — "The Puzzl Co / Play. Learn. Grow." + the intro sentence, Amazon CTA
-3. **Who We Are** — the three paragraphs, with 2024 and brand name emphasised as written
-4. **Our Products** — three alternating rows, each with its photo from the document:
-  - Jigsaw Puzzles (Paris puzzle set photo)
-  - Talking Flash Cards (card reader photo)
-  - Wooden Toys (wooden board photo)
-   Each keeps its exact description text; the doc's image captions become alt text.
-5. **Why Parents Choose The Puzzl Co** — the five bullets as accent-coloured cards
-6. **Customer Speak** — the three testimonials with attributions, as quote cards
-7. **Shop Our Collection** — the line about the Amazon Store plus the button linking to the Amazon store
-8. **Contact Us** — no form, just the details block: The Puzzl Co / PMH Consultancy, the Gurgaon address, phone (tel: link), email (mailto: link), CML number
-9. **Footer** — logo mark + copyright
+## Technical notes
 
-### Technical notes
-
-- Logo and the three product photos uploaded as CDN assets (`.asset.json` pointers) rather than committed binaries.
-- Brand colours registered as semantic tokens in `@theme inline`; no hardcoded colour classes in components.
-- Sections split into small components under `src/components/`.
-- SEO head on the index route: title, description, og/twitter tags for The Puzzl Co.
-- Fully responsive; light mode only.
-- Genarate HTML CSS & JS instead of react components so I can host it on git hub pages
-
-### Open item
-
-The Amazon Store URL wasn't provided, so the CTA will point to a clearly marked placeholder — send me the link and I'll swap it in.
+- Files touched: `public/site/index.html`, `public/site/styles.css`, `public/site/script.js`, plus a new `public/site/assets/hero.jpg`; the whole folder is then mirrored to `docs/` as before.
+- No content text is changed, and no other section is touched.
+- Verified with a headless browser screenshot at desktop and mobile widths before handing back.
