@@ -313,43 +313,55 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Shop ---------- */
 .shop {
-  position: relative; overflow: hidden; color: var(--ink);
-  padding: clamp(64px, 8vw, 96px) 0;
+  position: relative; overflow: hidden; color: #fff;
+  padding: clamp(72px, 9vw, 108px) 0;
   background:
-    radial-gradient(700px 320px at 20% 20%, #ffffff 0%, transparent 65%),
-    linear-gradient(120deg, var(--blue-tint) 0%, var(--orchid-tint) 100%);
+    radial-gradient(760px 340px at 15% 10%, rgba(255, 255, 255, 0.14) 0%, transparent 60%),
+    radial-gradient(620px 320px at 88% 90%, rgba(220, 148, 192, 0.35) 0%, transparent 62%),
+    linear-gradient(125deg, var(--blue-dark) 0%, var(--blue) 55%, #3b4bb4 100%);
+}
+.shop::after {
+  content: ""; position: absolute; inset: auto 0 0 0; height: 4px;
+  background: linear-gradient(90deg, var(--yellow) 0 25%, var(--emerald) 25% 50%, var(--orange) 50% 75%, var(--orchid) 75% 100%);
 }
 .shop h2 {
-  font-family: var(--font-display); font-weight: 800; color: var(--blue);
-  font-size: clamp(1.8rem, 3.2vw, 2.4rem); margin: 0 0 12px;
+  font-family: var(--font-display); font-weight: 800; color: #fff;
+  font-size: clamp(1.9rem, 3.4vw, 2.5rem); margin: 0 0 14px;
 }
-.shop p { color: var(--muted); max-width: 560px; margin: 0 auto 26px; }
-.shop .wrap { position: relative; }
-.shop .piece { background-color: var(--blue-light); opacity: 0.22; }
+.shop p { color: rgba(255, 255, 255, 0.82); max-width: 560px; margin: 0 auto 28px; }
+.shop .wrap { position: relative; z-index: 1; }
+.shop .piece { background-color: #fff; opacity: 0.09; }
+.shop .btn-amazon { box-shadow: 0 16px 34px -18px rgba(0, 0, 0, 0.6); }
 
 /* ---------- Contact ---------- */
+#contact { background: var(--bg-soft); }
 .contact-card {
   margin-top: 36px; background: var(--white); border: 1px solid var(--border);
+  border-top: 4px solid var(--blue);
   border-radius: var(--radius-lg); padding: clamp(28px, 4vw, 44px);
   display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 32px; box-shadow: var(--shadow);
+  gap: 32px; box-shadow: var(--shadow-lg);
 }
 .contact-name {
-  font-family: var(--font-display); font-weight: 800; font-size: 1.45rem;
+  font-family: var(--font-display); font-weight: 800; font-size: 1.5rem;
   color: var(--blue); margin: 0;
 }
 .contact-sub { font-family: var(--font-body); font-weight: 700; margin: 2px 0 12px; color: var(--ink); }
-.contact-card address { font-style: normal; color: var(--muted); line-height: 1.8; }
+.contact-card address { font-style: normal; color: var(--ink); line-height: 1.8; }
+.contact-block + .contact-block {
+  padding-left: 28px; border-left: 1px solid var(--border);
+}
 .contact-label {
   font-family: var(--font-body); font-weight: 800; font-size: 0.72rem;
-  text-transform: uppercase; letter-spacing: 0.16em; color: var(--orchid);
+  text-transform: uppercase; letter-spacing: 0.16em; color: var(--blue-light);
   margin: 0 0 2px;
 }
 .contact-block p + .contact-label { margin-top: 16px; }
-.contact-block a { font-weight: 800; }
+.contact-block a { font-weight: 800; color: var(--blue); }
+.contact-block a:hover { color: var(--orange); }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--blue-tint); color: var(--ink); padding: 40px 0 34px; }
+.site-footer { background: var(--blue-tint); color: var(--ink); padding: 40px 0 34px; border-top: 1px solid var(--border); }
 .footer-inner { text-align: center; }
 .footer-logo { height: 28px; width: auto; margin: 0 auto 12px; }
 .footer-tag {
@@ -406,4 +418,8 @@ a:hover { text-decoration: underline; }
   * { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
+}
+
+@media (max-width: 760px) {
+  .contact-block + .contact-block { padding-left: 0; border-left: 0; border-top: 1px solid var(--border); padding-top: 22px; }
 }
