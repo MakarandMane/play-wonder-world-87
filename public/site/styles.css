@@ -161,9 +161,9 @@ a:hover { text-decoration: underline; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative; overflow: hidden; isolation: isolate;
-  min-height: 78vh;
+  min-height: 640px;
   display: flex; align-items: center;
-  padding: clamp(110px, 13vw, 170px) 0 clamp(120px, 13vw, 180px);
+  padding: clamp(96px, 9vw, 120px) 0 clamp(110px, 10vw, 140px);
   margin-top: calc(-1 * var(--header-h));
 }
 .hero-bg {
