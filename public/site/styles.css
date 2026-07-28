@@ -278,7 +278,7 @@ a:hover { text-decoration: underline; }
 /* ---------- Why us ---------- */
 .why-grid {
   list-style: none; margin: 36px auto 0; padding: 0;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(196px, 1fr)); gap: 18px;
 }
 .why-card {
   position: relative;
