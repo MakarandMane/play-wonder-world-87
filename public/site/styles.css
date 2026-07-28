@@ -60,8 +60,8 @@ a:hover { text-decoration: underline; }
 }
 .skip-link:focus { left: 0; }
 
-.wrap { width: min(1140px, 100% - 44px); margin-inline: auto; }
-.wrap.narrow { width: min(820px, 100% - 44px); }
+.wrap { width: min(1180px, 100% - 48px); margin-inline: auto; }
+.wrap.narrow { width: min(880px, 100% - 48px); }
 .center-text { text-align: center; }
 
 /* ---------- Header ---------- */
