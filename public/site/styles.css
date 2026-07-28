@@ -89,6 +89,9 @@ a:hover { text-decoration: underline; }
 .site-header:not(.is-stuck) .nav a:not(.btn):hover { color: var(--yellow); }
 .site-header:not(.is-stuck) .btn-nav { background: var(--yellow); color: #3a2c00; }
 .site-header:not(.is-stuck) .nav-toggle .bar { background: #fff; }
+.site-header.is-stuck .btn-nav, .site-header.is-stuck .nav a.btn-nav { background: var(--blue); color: #fff; }
+.site-header.is-stuck .btn-nav:hover, .site-header.is-stuck .nav a.btn-nav:hover { background: var(--blue-dark); color: #fff; }
+.site-header:not(.is-stuck) .nav a.btn-nav { color: #3a2c00; }
 .header-inner {
   display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between;
   gap: 20px; padding: 14px 0;
