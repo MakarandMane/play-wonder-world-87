@@ -134,7 +134,7 @@ a:hover { text-decoration: underline; }
 .btn:hover { text-decoration: none; transform: translateY(-2px); }
 .btn-primary { background: var(--blue); color: #fff; box-shadow: 0 12px 24px -16px rgba(50, 64, 154, 0.9); }
 .btn-primary:hover { background: var(--blue-dark); }
-.btn-nav { padding: 10px 22px; font-size: 14px; border-radius: 10px; }
+.btn-nav, .nav a.btn-nav { padding: 10px 22px; font-size: 14px; border-radius: 10px; }
 .btn-ghost { background: var(--white); color: var(--blue); border: 2px solid var(--blue-tint); }
 .btn-ghost:hover { border-color: var(--blue-light); }
 .btn-amazon { background: var(--yellow); color: #3a2c00; box-shadow: 0 12px 24px -16px rgba(255, 194, 14, 0.9); }
@@ -363,14 +363,14 @@ a:hover { text-decoration: underline; }
 @media (max-width: 1240px) {
   .nav { gap: 13px; }
   .nav a { font-size: 13.5px; }
-  .btn-nav { padding: 9px 18px; }
+  .btn-nav, .nav a.btn-nav { padding: 9px 18px; }
   .wrap { width: min(1180px, 100% - 36px); }
 }
 
 @media (max-width: 1080px) {
   .nav { gap: 12px; }
   .nav a { font-size: 13px; }
-  .btn-nav { padding: 9px 15px; font-size: 13px; }
+  .btn-nav, .nav a.btn-nav { padding: 9px 15px; font-size: 13px; }
 }
 
 @media (max-width: 900px) {
@@ -391,7 +391,7 @@ a:hover { text-decoration: underline; }
   .nav.is-open { display: flex; }
   .nav a { padding: 13px 0; border-bottom: 1px solid var(--border); }
   .nav a:not(.btn)::after { display: none; }
-  .nav .btn-nav { margin-top: 14px; border-bottom: 0; }
+  .nav a.btn-nav { margin-top: 14px; border-bottom: 0; padding: 13px 22px; }
   /* inside the white dropdown the CTA must stay brand blue, not the hero yellow */
   .site-header .btn-nav,
   .site-header:not(.is-stuck) .btn-nav { background: var(--blue); color: #fff; }
