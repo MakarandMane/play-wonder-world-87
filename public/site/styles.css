@@ -81,7 +81,7 @@ a:hover { text-decoration: underline; }
 }
 .brand img { height: 28px; width: auto; }
 
-.nav { display: flex; align-items: center; gap: 22px; flex-wrap: nowrap; }
+.nav { display: flex; align-items: center; gap: 18px; flex-wrap: nowrap; }
 .nav a {
   font-weight: 600; font-size: 14px; color: var(--ink); white-space: nowrap;
   position: relative; padding: 4px 0; text-decoration: none;
@@ -198,7 +198,7 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--border); border-radius: var(--radius);
   padding: 14px; box-shadow: var(--shadow);
 }
-.product-media img { border-radius: 6px; width: 100%; height: auto; }
+.product-media img { border-radius: 6px; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 .tint-yellow { background: #fffaea; }
 .tint-orchid { background: #fdf3f8; }
 .tint-emerald { background: #f1faf2; }
