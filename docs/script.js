@@ -6,7 +6,7 @@
    * Amazon Store link.
    * TODO: replace the placeholder below with the real Amazon Store URL.
    * ------------------------------------------------------------------ */
-  var AMAZON_STORE_URL = ""; // e.g. "https://www.amazon.in/stores/ThePuzzlCo/page/XXXXXXXX"
+  var AMAZON_STORE_URL = "https://www.amazon.in/stores/THEPUZZLCO/page/58EC7CD9-28AA-4CB8-BDA2-B15962418AA3?lp_asin=B0DKD3YQBW&ref_=cm_sw_r_apin_ast_store_J3922ANXTGGA8X33Q19G&store_ref=bl_ast_dp_brandlogo_sto";
 
   document.querySelectorAll(".js-amazon").forEach(function (el) {
     if (AMAZON_STORE_URL) {
