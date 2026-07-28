@@ -335,6 +335,10 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Contact ---------- */
 #contact { background: var(--bg-soft); }
+#why-us {
+  background: linear-gradient(180deg, var(--blue-tint) 0%, #f3f1fb 100%);
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+}
 .contact-card {
   margin-top: 36px; background: var(--white); border: 1px solid var(--border);
   border-top: 4px solid var(--blue);
