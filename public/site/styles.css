@@ -21,10 +21,10 @@
   --white: #ffffff;
   --border: #e4e6f2;
 
-  --radius: 22px;
-  --radius-lg: 34px;
-  --shadow: 0 18px 44px -22px rgba(50, 64, 154, 0.38);
-  --shadow-lg: 0 30px 70px -30px rgba(50, 64, 154, 0.45);
+  --radius: 10px;
+  --radius-lg: 14px;
+  --shadow: 0 10px 24px -18px rgba(28, 33, 54, 0.45);
+  --shadow-lg: 0 18px 40px -28px rgba(28, 33, 54, 0.5);
 
   --font-display: "Baloo 2", "Trebuchet MS", sans-serif;
   --font-body: "Nunito", system-ui, -apple-system, sans-serif;
@@ -32,15 +32,15 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
