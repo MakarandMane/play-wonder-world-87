@@ -255,12 +255,12 @@ a:hover { text-decoration: underline; }
 
 /* ---------- About ---------- */
 .about-grid {
-  display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(28px, 5vw, 64px);
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 64px);
   align-items: center;
 }
 .about-media { position: relative; }
 .about-media img {
-  border-radius: var(--radius-lg); width: 100%; aspect-ratio: 4 / 3.4;
+  border-radius: var(--radius-lg); width: 100%; aspect-ratio: 4 / 3.2; max-height: 460px;
   object-fit: cover; box-shadow: var(--shadow);
 }
 .about-badge {
