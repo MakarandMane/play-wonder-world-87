@@ -329,6 +329,13 @@ a:hover { text-decoration: underline; }
 .reveal.is-visible { opacity: 1; transform: none; }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 1240px) {
+  .nav { gap: 14px; }
+  .nav a { font-size: 13.5px; }
+  .btn-nav { padding: 9px 16px; }
+  .wrap { width: min(1180px, 100% - 36px); }
+}
+
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; }
   .products-section { margin-top: -48px; }
